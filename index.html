@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>🤪</title>
+    <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+  </head>
+  <body onload="init();">
+    <canvas id="demoCanvas" width="500" height="500"></canvas>
+    <script>
+      const PADDLE_WIDTH = 100;
+      const PADDLE_HEIGHT = 20;
+      const BRICKS_WIDTH = 60;
+      const BRICK_HEIGHT = 30;
+      var stage;
+      var paddle;
+      var ball;
+
+      function init() {
+        stage = new createjs.Stage("demoCanvas");
+        createjs.Ticker.setFPS(60);
+        createjs.Ticker.addEventListener("tick", stage);
+      }
+    </script>
+  </body>
+</html>
