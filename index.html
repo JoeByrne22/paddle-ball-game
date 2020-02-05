@@ -19,6 +19,21 @@
         createjs.Ticker.setFPS(60);
         createjs.Ticker.addEventListener("tick", stage);
       }
+
+      function createBrick() {
+        var brick = new createjs.Shape();
+        brick.graphics.beginnFill("#000FFF");
+        brick.graphics.drawRect(0, 0, BRICKS_WIDTH, BRICK_HEIGHT);
+        brick.graphics.endFill();
+        stage.addChild(brick);
+      }
+
+      funciton createPaddle() {
+        paddle = new createjs.Shape();
+        paddle.graphics.beginFill('#000000').drawRect(0, 0, PADDLE_WIDTH, PADDLE_HEIGHT);
+        paddle.y =200l
+        stage.appendChild(paddle)
+      }
     </script>
   </body>
 </html>
